@@ -1,0 +1,161 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "happeero",
+    "ejected": false
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "sitemap.xml"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss",
+        "assets/styles/happeero.scss",
+        "assets/styles/font-awesome.min.css",
+        "../node_modules/angular-calendar/scss/angular-calendar.scss",
+        "../node_modules/slick-carousel/slick/slick.scss",
+        "../node_modules/slick-carousel/slick/slick-theme.scss",
+        "../node_modules/froala-editor/css/froala_editor.pkgd.min.css",
+        "../node_modules/froala-editor/css/plugins/char_counter.min.css",
+        "../node_modules/froala-editor/css/plugins/colors.min.css",
+        "../node_modules/froala-editor/css/plugins/emoticons.min.css",
+        "../node_modules/froala-editor/css/plugins/image.min.css",
+        "../node_modules/froala-editor/css/plugins/line_breaker.min.css",
+        "../node_modules/froala-editor/css/plugins/special_characters.min.css",
+        "../node_modules/froala-editor/css/third_party/spell_checker.min.css",
+        "../node_modules/froala-editor/css/plugins/video.min.css",
+        "../node_modules/ngx-intl-tel-input/resource/intl-tel-input.css",
+        "../node_modules/angular2-toaster/toaster.css"
+      ],
+      "scripts": [
+        "assets/scripts/analytics.min.js",
+        "assets/scripts/sitemap-generator.min.js",
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/slick-carousel/slick/slick.min.js",
+        "../node_modules/froala-editor/js/froala_editor.pkgd.min.js",
+        "../node_modules/froala-editor/js/plugins/align.min.js",
+        "../node_modules/froala-editor/js/plugins/char_counter.min.js",
+        "../node_modules/froala-editor/js/plugins/colors.min.js",
+        "../node_modules/froala-editor/js/plugins/emoticons.min.js",
+        "../node_modules/froala-editor/js/plugins/font_family.min.js",
+        "../node_modules/froala-editor/js/plugins/font_size.min.js",
+        "../node_modules/froala-editor/js/plugins/fullscreen.min.js",
+        "../node_modules/froala-editor/js/plugins/image.min.js",
+        "../node_modules/froala-editor/js/plugins/inline_style.min.js",
+        "../node_modules/froala-editor/js/plugins/line_breaker.min.js",
+        "../node_modules/froala-editor/js/plugins/link.min.js",
+        "../node_modules/froala-editor/js/plugins/lists.min.js",
+        "../node_modules/froala-editor/js/plugins/paragraph_format.min.js",
+        "../node_modules/froala-editor/js/plugins/paragraph_style.min.js",
+        "../node_modules/froala-editor/js/plugins/quote.min.js",
+        "../node_modules/froala-editor/js/plugins/special_characters.min.js",
+        "../node_modules/froala-editor/js/third_party/spell_checker.min.js",
+        "../node_modules/froala-editor/js/plugins/video.min.js",
+        "../node_modules/froala-editor/js/plugins/word_paste.min.js",
+        "../node_modules/underscore/underscore-min.js",
+        "../node_modules/cloudinary-jquery/cloudinary-jquery.min.js",
+        "../node_modules/cloudinary-core/cloudinary-core.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "serviceWorker": true
+    },
+    {
+      "platform": "server",
+      "root": "src",
+      "outDir": "dist/server",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "sitemap.xml"
+      ],
+      "index": "index.html",
+      "main": "main.server.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.server.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.server.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "class": {
+      "spec": false
+    },
+    "component": {
+      "spec": false,
+      "inlineStyle": false,
+      "inlineTemplate": false
+    },
+    "directive": {
+      "spec": false
+    },
+    "guard": {
+      "spec": false
+    },
+    "module": {
+      "spec": false
+    },
+    "pipe": {
+      "spec": false
+    },
+    "service": {
+      "spec": false
+    }
+  },
+  "warnings": {
+    "typescriptMismatch": false
+  }
+}
